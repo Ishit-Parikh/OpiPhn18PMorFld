@@ -16,14 +16,12 @@ Become employable as a Game Developer and earn enough to purchase the latest iPh
 A simple 2D dodge game built with Unity while learning the engine.
 
 - **Repository:** [Ishit-Parikh/DodgeCube](https://github.com/Ishit-Parikh/DodgeCube)
-- **Local:** `/mnt/storage1/Projects/DodgeCube`
 - **Unity Version:** 6000.3.18f1
 
 ## Course: Complete C# Unity 2D Game Development
 
 - **Platform:** Udemy
 - **Course URL:** https://www.udemy.com/share/101Wjs/
-- **Guide:** `/mnt/storage1/OpenCode to Rescue/Complete_CSharp_Unity_2D_Course_Guide.md`
 
 Coverage:
 
