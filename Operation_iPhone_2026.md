@@ -39,28 +39,28 @@ Coverage:
 **Objective 1**
 - **Start Time:** 3:30 PM
 - **End Time:** 4:38 PM
-- **Done:** Created a basic program that demonstrates the use of variables, data types, methods, classes, and objects.
+- **Done:** Created a basic program demonstrating variables, data types, methods, classes, and objects.
 
 ---
 
 ### 19th June 2026 (Friday)
 
-Had to complete yesterday's incomplete objectives as well as new ones today to be on track.
+Had to complete yesterday's pending objectives along with new ones to stay on track.
 
 **Objective 2 (Yesterday's objective)**
 - **Start Time:** 11:21 AM
 - **End Time:** 1:30 PM
-- **Done:** Started the Unity 2D course. Learnt the basic interface for Unity including how to set scripts, editor of choice, set and transform sprites from the Inspector Panel & via scripts.
+- **Done:** Started the Unity 2D course. Learned the basic Unity interface — how to set scripts, choose the editor, and set/transform sprites from the Inspector Panel and via scripts.
 
 **Objective 3 — Making a Simple Dodge Game**
 - **Start Time:** 3:40 PM
 - **End Time:** 5:55 PM
-- **Done:** Understood how to set colliders and Triggers. Took a tea break & ran some errands. Still needed to learn more to start and complete DodgeCube.
+- **Done:** Understood colliders and triggers. Took a tea break and ran errands. Still needed more study to start and complete DodgeCube.
 
 **Objective 3 (Continued)**
 - **Start Time:** 7:30 PM
 - **End Time:** 8:47 PM
-- **Done:** Created a simple game where all you have to do is dodge the falling ball. Made the Square Sprite (Cube) move left and right & made the ball fall from the sky. If ball goes out of range, its position is reset with Y being 0 and a random X value.
+- **Done:** Created a simple dodge game. Made the cube move left and right, and the ball fall from the sky. When the ball goes out of range, its position resets to Y = 0 with a random X value.
 
 ---
 
@@ -80,7 +80,7 @@ Concepts covered:
 - Boosts & bumps
 - UI text
 
-Extracted usable concepts for DodgeCube improvements. Took notes on what could improve the game and what new mechanics to borrow.
+Extracted usable concepts for DodgeCube improvements. Took notes on what could be improved and what new mechanics could be borrowed.
 
 ---
 
@@ -88,10 +88,10 @@ Extracted usable concepts for DodgeCube improvements. Took notes on what could i
 
 **Lane B — Build DodgeCube v2 (Main Work)**
 
-Transformed DodgeCube from prototype to actual mini game.
+Transformed DodgeCube from prototype to a proper mini game.
 
 **Objective 1 — Refactor Existing Code**
-- Fixed `Player.cs` — removed dead code, replaced hardcoded speed values, cleaned method naming
+- Fixed `Player.cs` — removed dead code, replaced hardcoded speed values, cleaned up method naming
 - Renamed falling object script from `StuffThatNeedsToBeDodged` → `Obstacle.cs`
 - Fixed broken `Random.Range(5f, 4f)` → correct `Random.Range(-4f, 4f)`
 
@@ -103,9 +103,22 @@ Transformed DodgeCube from prototype to actual mini game.
 
 **Objective 3 — Add Score**
 - Every obstacle successfully dodged (hits ground) increments score by 1
-- Score tracking in `GameControll.cs`
+- Score tracked in `GameControll.cs`
 
 **Objective 4 — Add UI**
 - TextMeshPro score display: "Score: 0"
 - Positioned top-left
 - Updated via `updateScore()` method
+
+---
+
+### 27th June 2026 (Saturday)
+
+**Session Stretch 1**
+- **Start Time:** 3:40 PM
+- **End Time:** 10:30 PM
+- **Done:**
+  - Renamed scripts and updated GitHub to reflect the changes
+  - Added game states to support launching MainMenu and GameOver screens
+  - Implemented MainMenu and GameOver logic with multiple breaks in between
+  - Undid the entire progress at the end — the multi-scene logic required significant recalibration and cleanup was too messy. Will restart fresh tomorrow from where I left off.
