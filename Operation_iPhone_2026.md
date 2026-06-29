@@ -122,3 +122,50 @@ Transformed DodgeCube from prototype to a proper mini game.
   - Added game states to support launching MainMenu and GameOver screens
   - Implemented MainMenu and GameOver logic with multiple breaks in between
   - Undid the entire progress at the end — the multi-scene logic required significant recalibration and cleanup was too messy. Will restart fresh tomorrow from where I left off.
+
+---
+
+### 28th June 2026 (Sunday)
+
+**Session Start**
+- **Start Time:** 6:15 PM
+- **End Time:** 9:10 PM
+- **Done:**
+  - Added dynamic bounds to player movement limits based on camera view (completed by 6:40 PM)
+  - Built Main Menu UI using Canvas (no new scene). UI includes a title logo and a game start button.
+
+---
+
+### 29th June 2026 (Monday)
+
+**Session Start**
+- **Start Time:** 2:15 PM
+- **End Time:** 6:10 PM
+- **Done:**
+  - **Objective 4 — Create GameManager Properly**
+    - Created `GameManager.cs` to centralize score, game state, UI panels, spawning, and start/game over logic
+    - Key variables: `isGameActive`, `isGameOver`, `score`, `finalScore`
+    - `GameStart()` — sets game active, shows score panel
+    - `SpawnPlayer()` — instantiates player at fixed position
+    - Dynamic player bounds using `Camera.main.ViewportToWorldPoint()` with padding
+    - `Update()` flow: if game active → spawn player + obstacles; if game over → show game over panel
+    - Score panel hidden initially, shown on game start
+  - **Objective 5 — Start Button Logic**
+    - On Start click: `GameStart()` sets `isGameActive = true`, shows score panel
+    - `Update()` loop then spawns player and obstacles automatically
+    - Game only runs after clicking Start
+  - **Objective 6 — Game Over Screen**
+    - GameOverPanel with GAME OVER text, final score display, and Restart button
+    - Panel hidden initially, shown via `GameOverPanel()` method on death
+    - Displays final score from `finalScore` variable
+  - **Objective 7 — Stop Gameplay on Death**
+    - `PlayerController.Update()` checks `isGameActive` before processing input
+    - `Obstacle` on Player trigger: sets `isGameActive = false`, `isGameOver = true`
+    - `GameManager.Update()` stops spawning when game is inactive
+    - Player movement uses `Mathf.Clamp` with dynamic bounds from GameManager
+  - **Objective 8 — Restart Button**
+    - Soft restart via `RestartGame()` — resets score/finalScore to 0, calls `GameStart()`
+    - GameOverPanel hidden, score panel shown, player re-spawns
+  - **Objective 9 — Final GitHub Push**
+    - Renamed `BoppyMovement.cs` → `PlayerController.cs`, `GameControll.cs` → `GameManager.cs`
+    - Pushed all changes to remote repository
