@@ -180,12 +180,31 @@ No progress — mouse developed a severe double-clicking issue. Unable to work e
 
 ### 3rd July 2026 (Friday)
 
-Back on track with the new mouse.
+New mouse arrived. Back on track.
+
+**Session 1 — Course Progress**
+- **Start Time:** 3:00 PM
+- **End Time:** 5:00 PM
+- **Done:** Watched Section 3: Snow Surfer, **Lectures 31–40**
+  - **Lecture 31–32:** Section intro and game design breakdown — rolling ball, slopes, obstacles, powerups
+  - **Lecture 33–34:** Sprite Shapes for 2D terrain and Edge Colliders for physics collision
+  - **Lecture 35:** Cinemachine Follow Camera with damping and look-ahead
+  - **Lecture 36–37:** Setting up the ball character with Rigidbody2D, Surface Effector 2D for slope sliding
+  - **Lecture 38:** Unity's modern Input System — Input Actions, key bindings, Vector2 input
+  - **Lecture 39:** Rotating the player using `AddTorque()`
+  - **Lecture 40:** Finish Line & Crash Detector trigger zones with `OnTriggerEnter2D()`
+
+**Session 2 — Hands-On Implementation**
+- **Start Time:** 6:30 PM
+- **End Time:** 8:30 PM
+- **Done:** Implemented Snow Surfer concepts in a practice Unity project
+  - Set up Input System bindings with `InputSystem.actions.FindAction("Move")`
+  - Applied `AddTorque` to Rigidbody2D for ball rotation based on input
+  - Created `FinishLine.cs` — detects player layer trigger, logs win
+  - Created `CrashDetector.cs` — detects floor layer trigger, logs crash
+  - Used LayerMask for clean collision detection instead of tags
 
 **Progress Summary So Far:**
-
-- **C# Course:** Completed Section 1 — basics of C# covered
-- **Unity 2D Course:** Completed through Section 2 (Delivery Dash)
-- **Games Built:**
-  - **DeliveryDash** — course-taught project (top-down driving game)
-  - **BoppyDodge / DodgeCube** — self-made project (dodge game)
+- **C# Course:** Completed Section 2
+- **Unity 2D Course:** Completed Sections 1–2, started Section 3 (Snow Surfer, Lectures 31–40)
+- **Games Built:** DeliveryDash (course), DodgeCube / BoppyDodge (self-made)
