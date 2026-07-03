@@ -169,3 +169,23 @@ Transformed DodgeCube from prototype to a proper mini game.
   - **Objective 9 — Final GitHub Push**
     - Renamed `BoppyMovement.cs` → `PlayerController.cs`, `GameControll.cs` → `GameManager.cs`
     - Pushed all changes to remote repository
+
+---
+
+### 30th June – 2nd July 2026 (Break)
+
+No progress — mouse developed a severe double-clicking issue. Unable to work effectively in Unity.
+
+---
+
+### 3rd July 2026 (Friday)
+
+Back on track with the new mouse.
+
+**Progress Summary So Far:**
+
+- **C# Course:** Completed Section 1 — basics of C# covered
+- **Unity 2D Course:** Completed through Section 2 (Delivery Dash)
+- **Games Built:**
+  - **DeliveryDash** — course-taught project (top-down driving game)
+  - **BoppyDodge / DodgeCube** — self-made project (dodge game)
