@@ -248,3 +248,44 @@ New mouse arrived. Back on track.
   - Crash/win scene transitions with `SceneManager.LoadScene()` and `Invoke()`
 
 ---
+
+### 7th July 2026 (Tuesday)
+
+**Unity 2D Course — Lectures 51–59 (Snow Surfer completed)**
+- **Done:**
+  - **Lecture 51:** Custom fonts with TextMeshPro Font Asset
+  - **Lecture 52:** `ScriptableObject` for player config data
+  - **Lecture 53–54:** Powerup activation via trigger detection, countdown timer with `Time.deltaTime`
+  - **Lecture 55:** Powerup-specific particle effects (glow aura, trail)
+  - **Lecture 56–58:** UI anchors, pivots, Layout Groups, Buttons, `OnClick()` events for character selection
+  - **Lecture 59:** Snow Surfer section wrap-up
+
+**Implemented alongside the instructor:**
+  - `PowerupSO.cs` — `ScriptableObject` with power-up type, value change, and duration
+  - `PowerUpManager.cs` — trigger detection, countdown timer, activate/deactivate calls
+  - `PlayerController.cs` — `activatePowerUp()` / `deactivatePowerUp()` methods modifying speed/torque based on power-up type
+  - Completed full Snow Surfer game alongside the course
+
+---
+
+### 8th July 2026 (Wednesday)
+
+**Independent Implementation — Snow Surfer From Scratch**
+- **Start Time:** (self-paced, no strict schedule)
+- **Done:** Rebuilt the entire Snow Surfer game independently, no walkthrough, no plan — just concepts from memory
+  - Set up Sprite Shape terrain with Edge Colliders
+  - Player ball with Rigidbody2D, `AddTorque()` rotation, Input System bindings
+  - Surface Effector 2D for slope physics
+  - Finish line and crash detector with scene reload via `SceneManager`
+  - Flip counter scoring with `Mathf.DeltaAngle`
+  - Boost mechanic via `FindAnyObjectByType<SurfaceEffector2D>()`
+  - Snow particles on ground contact (`OnCollisionEnter2D` / `OnCollisionExit2D`)
+  - `ScriptableObject`-driven powerups with countdown timer
+  - UI score display with TextMeshPro
+  - Player control toggle (`canControllPlayer`) on crash
+
+**Progress Summary So Far:**
+- **C# Course:** Completed Sections 1–4 (Intro, Decisions, Loops, Functions & Methods)
+- **Unity 2D Course:** Completed Sections 1–3 (Intro, Delivery Dash, Snow Surfer)
+- **C# Projects:** Rocket landing simulator, array/loop exercises, temperature average calculator
+- **Unity Projects:** DeliveryDash (course), DodgeCube / BoppyDodge (self-made), Snow Surfer (course + independent rebuild)
