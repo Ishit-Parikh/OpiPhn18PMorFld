@@ -227,3 +227,24 @@ New mouse arrived. Back on track.
   - **CodeExe9.cs** — `CalculateAverage()` method taking a `double[]` parameter and returning the average; `PrintAverage()` calling it and outputting the result
 
 ---
+
+### 6th July 2026 (Monday)
+
+**Unity 2D Course — Lectures 41–50 (Snow Surfer continued)**
+- **Done:**
+  - **Lecture 41–42:** `SceneManager.LoadScene()`, `Invoke()` for delayed scene restart
+  - **Lecture 43–44:** Particle Systems — configuring emission, shape, color, burst; triggering `Play()` / `Stop()` from code
+  - **Lecture 45:** Game feel tuning — physics values, background sprites
+  - **Lecture 46:** `FindFirstObjectByType<T>()` for dynamic Surface Effector boost
+  - **Lecture 47:** `OnCollisionExit2D()` — snow particles play on ground contact, stop on exit
+  - **Lecture 48:** Public access modifier — `canControllPlayer` bool to disable input on crash
+  - **Lecture 49:** Flip counting with `Mathf.DeltaAngle()` and `Transform.eulerAngles`
+  - **Lecture 50:** Function parameters — `updateScore(int addScore)` for reusable scoring
+
+**Implemented alongside the instructor:**
+  - `SnowParicleScript.cs` — `OnCollisionEnter2D` / `OnCollisionExit2D` with LayerMask for particle control
+  - `ScoreManager.cs` — `updateScore(int addScore)` method with parameter
+  - `PlayerController.cs` — `flipCounts()` with `Mathf.DeltaAngle`, `boostPlayer()` with `SurfaceEffector2D.speed`, `canControllPlayer` state
+  - Crash/win scene transitions with `SceneManager.LoadScene()` and `Invoke()`
+
+---
