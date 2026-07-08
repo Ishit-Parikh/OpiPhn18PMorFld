@@ -218,3 +218,12 @@ New mouse arrived. Back on track.
   - **CodeExe8.cs** — nested `for` loops summing rows of a jagged 2D array
 
 ---
+
+### 5th July 2026 (Sunday)
+
+**C# MasterClass — Section 4: Functions & Methods**
+- **Done:**
+  - Method declaration, parameters, return types
+  - **CodeExe9.cs** — `CalculateAverage()` method taking a `double[]` parameter and returning the average; `PrintAverage()` calling it and outputting the result
+
+---
