@@ -29,6 +29,7 @@ Coverage:
 |---------|----------|--------|
 | Section 1: Introduction & Setup | 1–6 | Done |
 | Section 2: Delivery Dash | 7–30 | Done (completed 25th June) |
+| Section 3: Snow Surfer | 31–59 | Done (completed 7th July) |
 
 ---
 
@@ -204,7 +205,16 @@ New mouse arrived. Back on track.
   - Created `CrashDetector.cs` — detects floor layer trigger, logs crash
   - Used LayerMask for clean collision detection instead of tags
 
-**Progress Summary So Far:**
-- **C# Course:** Completed Section 2
-- **Unity 2D Course:** Completed Sections 1–2, started Section 3 (Snow Surfer, Lectures 31–40)
-- **Games Built:** DeliveryDash (course), DodgeCube / BoppyDodge (self-made)
+---
+
+### 4th July 2026 (Saturday)
+
+**C# MasterClass — Section 3: Loops**
+- **Done:**
+  - `for` loops, `foreach` loops, nested loops
+  - Arrays and jagged 2D arrays
+  - **RocketLanding.cs** — countdown timer with `for` loop, ASCII animation with `Thread.Sleep`
+  - **CodeExe7.cs** — `foreach` loop iterating over an int array
+  - **CodeExe8.cs** — nested `for` loops summing rows of a jagged 2D array
+
+---

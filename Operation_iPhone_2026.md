@@ -29,6 +29,7 @@ Coverage:
 |---------|----------|--------|
 | Section 1: Introduction & Setup | 1–6 | Done |
 | Section 2: Delivery Dash | 7–30 | Done (completed 25th June) |
+| Section 3: Snow Surfer | 31–59 | Done (completed 7th July) |
 
 ---
 
@@ -204,7 +205,87 @@ New mouse arrived. Back on track.
   - Created `CrashDetector.cs` — detects floor layer trigger, logs crash
   - Used LayerMask for clean collision detection instead of tags
 
+---
+
+### 4th July 2026 (Saturday)
+
+**C# MasterClass — Section 3: Loops**
+- **Done:**
+  - `for` loops, `foreach` loops, nested loops
+  - Arrays and jagged 2D arrays
+  - **RocketLanding.cs** — countdown timer with `for` loop, ASCII animation with `Thread.Sleep`
+  - **CodeExe7.cs** — `foreach` loop iterating over an int array
+  - **CodeExe8.cs** — nested `for` loops summing rows of a jagged 2D array
+
+---
+
+### 5th July 2026 (Sunday)
+
+**C# MasterClass — Section 4: Functions & Methods**
+- **Done:**
+  - Method declaration, parameters, return types
+  - **CodeExe9.cs** — `CalculateAverage()` method taking a `double[]` parameter and returning the average; `PrintAverage()` calling it and outputting the result
+
+---
+
+### 6th July 2026 (Monday)
+
+**Unity 2D Course — Lectures 41–50 (Snow Surfer continued)**
+- **Done:**
+  - **Lecture 41–42:** `SceneManager.LoadScene()`, `Invoke()` for delayed scene restart
+  - **Lecture 43–44:** Particle Systems — configuring emission, shape, color, burst; triggering `Play()` / `Stop()` from code
+  - **Lecture 45:** Game feel tuning — physics values, background sprites
+  - **Lecture 46:** `FindFirstObjectByType<T>()` for dynamic Surface Effector boost
+  - **Lecture 47:** `OnCollisionExit2D()` — snow particles play on ground contact, stop on exit
+  - **Lecture 48:** Public access modifier — `canControllPlayer` bool to disable input on crash
+  - **Lecture 49:** Flip counting with `Mathf.DeltaAngle()` and `Transform.eulerAngles`
+  - **Lecture 50:** Function parameters — `updateScore(int addScore)` for reusable scoring
+
+**Implemented alongside the instructor:**
+  - `SnowParicleScript.cs` — `OnCollisionEnter2D` / `OnCollisionExit2D` with LayerMask for particle control
+  - `ScoreManager.cs` — `updateScore(int addScore)` method with parameter
+  - `PlayerController.cs` — `flipCounts()` with `Mathf.DeltaAngle`, `boostPlayer()` with `SurfaceEffector2D.speed`, `canControllPlayer` state
+  - Crash/win scene transitions with `SceneManager.LoadScene()` and `Invoke()`
+
+---
+
+### 7th July 2026 (Tuesday)
+
+**Unity 2D Course — Lectures 51–59 (Snow Surfer completed)**
+- **Done:**
+  - **Lecture 51:** Custom fonts with TextMeshPro Font Asset
+  - **Lecture 52:** `ScriptableObject` for player config data
+  - **Lecture 53–54:** Powerup activation via trigger detection, countdown timer with `Time.deltaTime`
+  - **Lecture 55:** Powerup-specific particle effects (glow aura, trail)
+  - **Lecture 56–58:** UI anchors, pivots, Layout Groups, Buttons, `OnClick()` events for character selection
+  - **Lecture 59:** Snow Surfer section wrap-up
+
+**Implemented alongside the instructor:**
+  - `PowerupSO.cs` — `ScriptableObject` with power-up type, value change, and duration
+  - `PowerUpManager.cs` — trigger detection, countdown timer, activate/deactivate calls
+  - `PlayerController.cs` — `activatePowerUp()` / `deactivatePowerUp()` methods modifying speed/torque based on power-up type
+  - Completed full Snow Surfer game alongside the course
+
+---
+
+### 8th July 2026 (Wednesday)
+
+**Independent Implementation — Snow Surfer From Scratch**
+- **Start Time:** (self-paced, no strict schedule)
+- **Done:** Rebuilt the entire Snow Surfer game independently, no walkthrough, no plan — just concepts from memory
+  - Set up Sprite Shape terrain with Edge Colliders
+  - Player ball with Rigidbody2D, `AddTorque()` rotation, Input System bindings
+  - Surface Effector 2D for slope physics
+  - Finish line and crash detector with scene reload via `SceneManager`
+  - Flip counter scoring with `Mathf.DeltaAngle`
+  - Boost mechanic via `FindAnyObjectByType<SurfaceEffector2D>()`
+  - Snow particles on ground contact (`OnCollisionEnter2D` / `OnCollisionExit2D`)
+  - `ScriptableObject`-driven powerups with countdown timer
+  - UI score display with TextMeshPro
+  - Player control toggle (`canControllPlayer`) on crash
+
 **Progress Summary So Far:**
-- **C# Course:** Completed Section 2
-- **Unity 2D Course:** Completed Sections 1–2, started Section 3 (Snow Surfer, Lectures 31–40)
-- **Games Built:** DeliveryDash (course), DodgeCube / BoppyDodge (self-made)
+- **C# Course:** Completed Sections 1–4 (Intro, Decisions, Loops, Functions & Methods)
+- **Unity 2D Course:** Completed Sections 1–3 (Intro, Delivery Dash, Snow Surfer)
+- **C# Projects:** Rocket landing simulator, array/loop exercises, temperature average calculator
+- **Unity Projects:** DeliveryDash (course), DodgeCube / BoppyDodge (self-made), Snow Surfer (course + independent rebuild)
